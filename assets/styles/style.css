@@ -125,7 +125,7 @@ section {
   position: relative;
 }
 
-.nav-bar-div .navbar {
+.nav-bar .navbar {
   position: absolute;
   padding: 0px 0px;
   top: 0;
@@ -133,12 +133,12 @@ section {
   z-index: 999;
 }
 
-.nav-bar-div .navbar .image {
+.nav-bar .navbar .image {
   height: 80px;
   filter: drop-shadow(rgba(255, 255, 255, 0.966) 0px 5px 15px);
 }
 @media screen and (max-width: 767px) {
-  .nav-bar-div .navbar .image {
+  .nav-bar .navbar .image {
     height: 50px;
   }
 }
@@ -305,7 +305,7 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .nav-bar-div .navbar {
+  .nav-bar .navbar {
     position: static;
   }
   .toggler-icon i {
