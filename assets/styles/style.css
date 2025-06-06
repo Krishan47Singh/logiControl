@@ -195,7 +195,7 @@ section {
 }
 
 .slide-navbar .items .nav-items .nav-item .nav-link {
-  color: #e2c66e;
+  color: #fff;
   font-size: 24px;
   display: block;
 }
@@ -207,7 +207,7 @@ section {
 .slide-navbar .items .nav-items .nav-item::after {
   content: "";
   position: absolute;
-  border: 1px solid #e2c66e;
+  border: 1px solid #fff;
   width: 80%;
   transition: 0.5s ease-in-out;
   opacity: 1;
@@ -219,11 +219,11 @@ section {
   width: 80%;
 }
 
-.web-btn {
+.slide-navbar .items .web-btn {
   margin-top: 40px;
 }
 
-.web-btn a {
+.slide-navbar .items .web-btn a {
   display: block;
 }
 
@@ -494,9 +494,7 @@ section {
 !!!
  */
 
-/* industry we serve start */
-
-/* press shop automation start */
+/* industry-we-serve css start */
 
 .we-serve-industries .automation-shop-title p {
   font-size: 18px;
@@ -556,6 +554,7 @@ section {
   color: var(--dark-blue);
 }
 
+/* responsive industry-we-serve */
 @media screen and (max-width: 991px) {
   .we-serve-industries .serve-left {
     justify-content: left;
@@ -597,8 +596,10 @@ section {
     display: none;
   }
 }
-/* press shop automation end */
-/* industry we serve end */
+/* end of responsive industry-we-serve */
+
+/* end of industry-we-serve css */
+
 
 /* ------------ products css start ----------- */
 .products {
