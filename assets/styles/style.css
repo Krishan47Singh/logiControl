@@ -496,10 +496,6 @@ section {
 
 /* industry-we-serve css start */
 
-.we-serve-industries .automation-shop-title p {
-  font-size: 18px;
-}
-
 .we-serve-industries .serve-left {
   display: flex;
   justify-content: center;
@@ -520,6 +516,7 @@ section {
   cursor: pointer;
   border: none;
   margin-bottom: 0px;
+  font-size: 20px;
 }
 
 .we-serve-industries .serve-left .nav-tabs .nav-link.active {
@@ -531,6 +528,12 @@ section {
   margin-bottom: 20px;
   color: #7a0813;
   height: 2px;
+}
+
+.we-serve-industries .tab-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .we-serve-industries .serve-right {
@@ -576,10 +579,6 @@ section {
   }
 }
 @media screen and (max-width: 767px) {
-  .we-serve-industries .automation-shop-title p {
-    font-size: 16px;
-    text-align: justify;
-  }
   .we-serve-industries .serve-left {
     justify-content: left;
   }
@@ -1281,7 +1280,7 @@ section {
     justify-content: left;
     border: none;
   }
-   .footer-widget .copy-right-div .copyright p {
+  .footer-widget .copy-right-div .copyright p {
     text-align: center;
     font-size: 12px;
   }
