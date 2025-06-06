@@ -842,6 +842,45 @@ section {
 
 /* ------ end of blog css ------ */
 
+/* ------------ FAQ's section css start --------------- */
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button {
+  color: rgb(84, 153, 227);
+  transition: 0.5s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: blue;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-left: auto;
+  content: "+";
+  font-size: 2rem;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: 2.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "-";
+  font-size: 2rem;
+  /* Same size for consistency */
+  color: white;
+  background-image: none;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+}
+/* ------------ end of FAQ's section css -------------- */
+
 /* ------------- contact us css start -------------- */
 .contact-us {
   background: linear-gradient(to left, #ffffff9b, #000000be),
