@@ -163,7 +163,7 @@
 
 
     <!-- we serve industries section start -->
-    <section class="we-serve-industries py-lg-5">
+    <section class="we-serve-industries">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -181,36 +181,127 @@
 
           <div class="col-lg-3 col-sm-12">
             <div class="serve-left">
-              <ul>
-                <li>Automobile</li>
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation"><a class="nav-link active" id="automobile-tab"
+                    data-bs-toggle="tab" data-bs-target="#automobile" role="tab" aria-controls="automobile"
+                    aria-selected="true">Automobile</a></li>
                 <hr class="serve-line">
-                <li>Pulp & Paper</li>
+                <li class="nav-item" role="presentation"><a class="nav-link" id="pulp-paper-tab" data-bs-toggle="tab"
+                    data-bs-target="#pulp-paper" role="tab" aria-controls="pulp-paper" aria-selected="false">Pulp and
+                    Papers</a></li>
                 <hr class="serve-line">
-                <li>Cement</li>
+                <li class="nav-item" role="presentation"><a class="nav-link" id="cement-tab" data-bs-toggle="tab"
+                    data-bs-target="#cement" role="tab" aria-controls="cement" aria-selected="false">Cement</a></li>
                 <hr class="serve-line">
-                <li>Power Plants</li>
+                <li class="nav-item" role="presentation"><a class="nav-link" id="power-plant-tab" data-bs-toggle="tab"
+                    data-bs-target="#power-plant" role="tab" aria-controls="power-plant" aria-selected="false">Power
+                    Plants</a></li>
                 <hr class="serve-line">
-                <li>Sugar Mills</li>
+                <li class="nav-item" role="presentation"><a class="nav-link" id="sugar-mills-tab" data-bs-toggle="tab"
+                    data-bs-target="#sugar-mills" role="tab" aria-controls="sugar-mills" aria-selected="false">Sugar
+                    Mills</a></li>
                 <hr class="serve-line">
-                <li>Pharmaceuticals</li>
+                <li class="nav-item" role="presentation"><a class="nav-link" id="pharmaceuticals-tab"
+                    data-bs-toggle="tab" data-bs-target="#pharmaceuticals" role="tab" aria-controls="pharmaceuticals"
+                    aria-selected="false">Pharmaceuticals</a></li>
                 <hr class="serve-line">
-                <li>White Goods Manufacturing</li>
+                <li class="nav-item" role="presentation"><a class="nav-link" id="white-good-tab" data-bs-toggle="tab"
+                    data-bs-target="#white-good" role="tab" aria-controls="white-good" aria-selected="false">White Goods
+                    Manufacturing</a></li>
                 <hr>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-9 col-sm-12">
-            <div class="serve-right">
-              <div class="serve-img">
-                <img class="img-fluid" src="assets/img/we-serve/pressautomation.jpg" alt="serve-img" loading="lazy">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="automobile" role="tabpanel" aria-labelledby="automobile-tab">
+                <div class="serve-right">
+                  <div class="serve-img">
+                    <img class="img-fluid" src="assets/img/we-serve/pressautomation.jpg" alt="serve-img" loading="lazy">
+                  </div>
+                  <div class="serve-text">
+                    <h3>Precision Engineering</h3>
+                    <p>At LogiControl Engineers & Automation Pvt. Ltd. <br>Our Precision Engineering Solutions are
+                      focused on delivering high-accuracy.</p>
+                  </div>
+                </div>
               </div>
-              <div class="serve-text">
-                <h3>Precision Engineering</h3>
-                <p>At LogiControl Engineers & Automation Pvt. Ltd. <br>Our Precision Engineering Solutions are
-                  focused on delivering high-accuracy.</p>
+              <div class="tab-pane fade" id="pulp-paper" role="tabpanel" aria-labelledby="pulp-paper-tab">
+                <div class="serve-right">
+                  <div class="serve-img">
+                    <img class="img-fluid" src="assets/img/about-us/aboutusbg1.jpg" alt="serve-img" loading="lazy">
+                  </div>
+                  <div class="serve-text">
+                    <h3>Precision Engineering</h3>
+                    <p>At LogiControl Engineers & Automation Pvt. Ltd. <br>Our Precision Engineering Solutions are
+                      focused on delivering high-accuracy.</p>
+                  </div>
+                </div>
               </div>
+              <div class="tab-pane fade" id="cement" role="tabpanel" aria-labelledby="cement-tab">
+                <div class="serve-right">
+                  <div class="serve-img">
+                    <img class="img-fluid" src="assets/img/about-us/aboutusbg1.jpg" alt="serve-img" loading="lazy">
+                  </div>
+                  <div class="serve-text">
+                    <h3>Precision Engineering</h3>
+                    <p>At LogiControl Engineers & Automation Pvt. Ltd. <br>Our Precision Engineering Solutions are
+                      focused on delivering high-accuracy.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="power-plant" role="tabpanel" aria-labelledby="power-plant-tab">
+                <div class="serve-right">
+                  <div class="serve-img">
+                    <img class="img-fluid" src="assets/img/about-us/aboutusbg1.jpg" alt="serve-img" loading="lazy">
+                  </div>
+                  <div class="serve-text">
+                    <h3>Precision Engineering</h3>
+                    <p>At LogiControl Engineers & Automation Pvt. Ltd. <br>Our Precision Engineering Solutions are
+                      focused on delivering high-accuracy.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="sugar-mills" role="tabpanel" aria-labelledby="sugar-mills-tab">
+                <div class="serve-right">
+                  <div class="serve-img">
+                    <img class="img-fluid" src="assets/img/about-us/aboutusbg1.jpg" alt="serve-img" loading="lazy">
+                  </div>
+                  <div class="serve-text">
+                    <h3>Precision Engineering</h3>
+                    <p>At LogiControl Engineers & Automation Pvt. Ltd. <br>Our Precision Engineering Solutions are
+                      focused on delivering high-accuracy.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pharmaceuticals" role="tabpanel" aria-labelledby="pharmaceuticals-tab">
+                <div class="serve-right">
+                  <div class="serve-img">
+                    <img class="img-fluid" src="assets/img/about-us/aboutusbg1.jpg" alt="serve-img" loading="lazy">
+                  </div>
+                  <div class="serve-text">
+                    <h3>Precision Engineering</h3>
+                    <p>At LogiControl Engineers & Automation Pvt. Ltd. <br>Our Precision Engineering Solutions are
+                      focused on delivering high-accuracy.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="white-good" role="tabpanel" aria-labelledby="white-good-tab">
+                <div class="serve-right">
+                  <div class="serve-img">
+                    <img class="img-fluid" src="assets/img/about-us/aboutusbg1.jpg" alt="serve-img" loading="lazy">
+                  </div>
+                  <div class="serve-text">
+                    <h3>Precision Engineering</h3>
+                    <p>At LogiControl Engineers & Automation Pvt. Ltd. <br>Our Precision Engineering Solutions are
+                      focused on delivering high-accuracy.</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
+
           </div>
         </div>
       </div>
@@ -655,14 +746,15 @@
 
   <footer class="footer-widget">
     <div class="container">
-     <div class="copy-right-div">
-       <div class="copyright">
-        <p>Copyright © 2025 <span>LogiControl</span>. &nbsp; All rights reserved.</p>
+      <div class="copy-right-div">
+        <div class="copyright">
+          <p>Copyright © 2025 <span>LogiControl</span>. &nbsp; All rights reserved.</p>
+        </div>
+        <div class=" t-4-a">
+          <p>Designed by<a href="https://trade4asia.com/" target="_blank" aria-label="trade4asia pvt ltd"> Trade4asia
+              Pvt. Ltd</a></p>
+        </div>
       </div>
-      <div class=" t-4-a">
-        <p>Designed by<a href="https://trade4asia.com/" target="_blank" aria-label="trade4asia pvt ltd"> Trade4asia Pvt. Ltd</a></p>
-      </div>
-     </div>
     </div>
   </footer>
   <!--end of footer  -->
