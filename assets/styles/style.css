@@ -1429,11 +1429,15 @@ section {
 
 /* --------------------------------------------------About US Page CSS---------------------------------------------- */
 
+/* banner css start */
 .about-us-banner {
   position: relative;
   overflow: hidden;
   padding: 150px 0px;
-  background: linear-gradient(to left,rgba(48, 33, 255, 0.875), rgba(255, 255, 255, 0.147)
+  background: linear-gradient(
+    to left,
+    rgba(48, 33, 255, 0.875),
+    rgba(255, 255, 255, 0.147)
   );
 }
 .about-us-banner .sub-banner-heading {
@@ -1449,27 +1453,35 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
 }
 .about-us-banner .sub-banner-heading .banner-text h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  
 }
 
-.about-us-banner .sub-banner-heading .banner-text h3 {
+.about-us-banner .sub-banner-heading .banner-text h2, h3 {
   font-size: 18px;
   color: #fff;
+  font-weight: lighter;
+}
+/* banner css end */
+
+/* aboutus css start */
+
+.aboutuspage-about-us p{
+  font-size: 18px;
 }
 
-
-.aboutuspage-about-us .right-side-text {
+.aboutuspage-about-us .left-side-text {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: justify;
 }
-.aboutuspage-about-us .right-side-text h2 {
+.aboutuspage-about-us .left-side-text h2 {
   font-size: 14px;
   color: var(--blue);
   margin-bottom: 30px;
@@ -1479,10 +1491,12 @@ section {
   text-align: justify;
   margin-top: 20px;
 }
+/* aboutus css end */
 
+/* project method css start */
 
 .project-method .project-method-card {
-  
+  height: 220px;
   padding: 20px 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -1490,7 +1504,7 @@ section {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .project-method .project-method-card h3 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 600;
 }
@@ -1498,17 +1512,70 @@ section {
   color: var(--light-blue);
   font-size: 30px;
 }
+/* project method css end */
 
-.mission-vission {
+/* mission vision css */
+.mission-vision {
   text-align: justify;
 }
-.mission-vission h2{
+.mission-vision h2 {
+  font-size: 22px;
   color: var(--light-blue);
 }
 
-.mission-vission .our-mission{
+.mission-vision .our-mission {
   padding: 0px 20px;
 }
-.mission-vission .our-vision{
+.mission-vision .our-vision {
   padding: 0px 20px;
 }
+
+.aboutus-main hr {
+  margin: 0px;
+}
+/* misssion vision css end */
+
+/* responsive css start  */
+@media screen and (max-width: 1200px) {
+   .project-method .project-method-card {
+   
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+   .project-method .project-method-card {
+    margin: 0px;
+    margin-bottom: 20px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-us-banner {
+    padding: 80px 0px;
+  }
+
+  .aboutuspage-about-us p{
+  font-size: 16px;
+}
+  .aboutuspage-about-us .left-side-text h2 {
+    font-size: 14px;
+    color: var(--blue);
+    margin-bottom: 10px;
+  }
+  .project-method .project-method-card {
+    margin: 0px;
+    margin-bottom: 15px;
+    height: auto;
+  }
+  .mission-vision .our-mission {
+    padding: 0px;
+  }
+  .mission-vision .our-vision {
+    padding: 0px;
+  }
+}
+
+
+/* -------------------------------------------------- end of About-US Page CSS---------------------------------------------- */
