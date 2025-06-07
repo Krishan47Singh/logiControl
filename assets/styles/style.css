@@ -728,7 +728,7 @@ section {
 /* --------------------- end of client css ----------------------- */
 
 /* ------ blogs css start ------- */
-.blogs {
+.blogs-home {
   background: linear-gradient(rgba(244, 241, 239, 0.607), rgba(0, 0, 0, 0.914)),
     url(../img/blog/blog-bg.jpg) no-repeat center center/cover;
 }
