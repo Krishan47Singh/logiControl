@@ -1426,3 +1426,89 @@ section {
 }
 
 /* end of fixed icons css */
+
+/* --------------------------------------------------About US Page CSS---------------------------------------------- */
+
+.about-us-banner {
+  position: relative;
+  overflow: hidden;
+  padding: 150px 0px;
+  background: linear-gradient(to left,rgba(48, 33, 255, 0.875), rgba(255, 255, 255, 0.147)
+  );
+}
+.about-us-banner .sub-banner-heading {
+  position: relative;
+}
+.about-us-banner .sub-banner-heading .banner-text {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+
+.about-us-banner .sub-banner-heading .banner-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-banner .sub-banner-heading .banner-text h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.about-us-banner .sub-banner-heading .banner-text h3 {
+  font-size: 18px;
+  color: #fff;
+}
+
+
+.aboutuspage-about-us .right-side-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+.aboutuspage-about-us .right-side-text h2 {
+  font-size: 14px;
+  color: var(--blue);
+  margin-bottom: 30px;
+}
+
+.aboutuspage-about-us .about-text {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+
+.project-method .project-method-card {
+  
+  padding: 20px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0px 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.project-method .project-method-card h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.project-method .project-method-card h4 {
+  color: var(--light-blue);
+  font-size: 30px;
+}
+
+.mission-vission {
+  text-align: justify;
+}
+.mission-vission h2{
+  color: var(--light-blue);
+}
+
+.mission-vission .our-mission{
+  padding: 0px 20px;
+}
+.mission-vission .our-vision{
+  padding: 0px 20px;
+}
