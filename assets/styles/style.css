@@ -1,20 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-
+body {
+  font-family: "roboto";
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 :root {
   --light-blue: #346dff;
   --blue: #4492ff;
   --dark-blue: #2f21ff;
-  --yellow: #ffdf7c;
+  --darkest-blue: #140f57;
+  --black: #000;
+  --yellow: #dfa53a;
 }
 
 a {
@@ -433,15 +432,10 @@ section {
 /* ----------- end of banner css ----------- */
 
 /* about us css start */
-.about-us {
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.878),
-      rgba(0, 0, 0, 0.459)
-    ),
-    url(../img/about-us/aboutusbg1.jpg) no-repeat center center/cover;
+/* .about-us {
+  background: linear-gradient( to right, rgba(255, 255, 255, 0.878), rgba(0, 0, 0, 0.459)), url(../img/about-us/aboutusbg1.jpg) no-repeat center center/cover;
   margin-top: 10px;
-}
+} */
 
 .about-us .about-img {
   position: relative;
@@ -471,7 +465,6 @@ section {
 
 .about-us .about-img .about-img-text {
   background: #1c2265;
-  color: #fff;
   padding: 15px 20px;
   border-radius: 10px;
   position: absolute;
@@ -480,7 +473,7 @@ section {
 }
 
 .about-us .about-text .about-text-head {
-  color: #37327d;
+  color: var(--darkest-blue);
   margin-bottom: 20px;
 }
 
@@ -491,7 +484,7 @@ section {
 .about-us .about-text .about-text-body {
   text-align: justify;
   line-height: 2;
-  color: #fff;
+  color: var(--black);
 }
 
 /* responsive css */
@@ -522,14 +515,14 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .about-us {
+  /* .about-us {
     background: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 0.985),
         rgba(0, 0, 0, 0.459)
       ),
       url(../img/about-us/aboutusbg1.jpg) no-repeat center center/cover;
-  }
+  } */
 
   .about-us .about-img .about-back-img img {
     height: 100%;
@@ -612,14 +605,14 @@ section {
 }
 
 .we-serve-industries .serve-left .nav-tabs .nav-link.active {
-  color: #eed074;
+  color: var(--dark-blue);
 }
 
 .we-serve-industries .serve-left hr {
   margin-top: 5px;
   margin-bottom: 20px;
-  color: #7a0813;
-  height: 2px;
+  color: var(--darkest-blue);
+  height: 1px;
 }
 
 .we-serve-industries .tab-content {
@@ -646,7 +639,7 @@ section {
   padding: 20px 10px;
 }
 .we-serve-industries .serve-right .serve-text h3 {
-  color: var(--dark-blue);
+  color: var(--darkest-blue);
 }
 
 /* responsive industry-we-serve */
@@ -689,8 +682,46 @@ section {
 }
 /* end of responsive industry-we-serve */
 
-/* end of industry-we-serve css */
+/* --------------- end of industry-we-serve css ---------------- */
 
+/* products css start */
+
+.products .product-card {
+  position: relative;
+  overflow: hidden;
+}
+.products .product-card .product-img {
+  position: relative;
+}
+
+.products .product-card .product-card-text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+
+  padding: 200px 0px 0px 20px;
+  left: 0;
+  color: #000;
+  background: linear-gradient(
+    to top,
+    rgba(20, 15, 87, 0.89),
+    rgba(255, 255, 255, 0.892)
+  );
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.products .product-card:hover .product-card-text {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+.products .product-card .product-card-text h3 {
+  font-size: 40px;
+  color: var(--darkest-blue);
+}
+
+/* end of products css */
 
 /* --------------------- clients css start --------------------- */
 
@@ -813,8 +844,8 @@ section {
 /* ------ end of blog css ------ */
 
 /* ------------ FAQ's section css start --------------- */
-.faq .accordion .accordion-item .accordion-body p{
-  color: #5499e3;
+.faq .accordion .accordion-item .accordion-body p {
+  color: var(--dark-blue);
 }
 
 .faq .accordion .accordion-item .accordion-header .accordion-button:focus {
@@ -826,9 +857,13 @@ section {
   transition: 0.5s ease-in-out;
 }
 
-.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+.faq
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed) {
   color: #fff;
-  background-color: blue;
+  background-color: var(--dark-blue);
 }
 
 .faq .accordion .accordion-item .accordion-header .accordion-button::after {
@@ -844,7 +879,11 @@ section {
   transition: transform 0.2s ease-in-out;
 }
 
-.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+.faq
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
   content: "-";
   font-size: 2rem;
   /* Same size for consistency */
@@ -1106,9 +1145,7 @@ section {
 
 /* -----------  end of contatc us css ----------- */
 
-
 /* end of custom css */
-
 
 /* --------------------------------------------------About US Page CSS---------------------------------------------- */
 

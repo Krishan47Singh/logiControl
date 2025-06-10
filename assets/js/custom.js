@@ -23,13 +23,4 @@
     }
   });
 
- 
-function add(a,b){
-  while(b>0){
-    a++;
-    b--;
-  }
-  return a;
-}
-const result=add(5,6);
-console.log(result)
+

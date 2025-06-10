@@ -1,11 +1,11 @@
-$(".why-us").owlCarousel({
+$(".product-carousel").owlCarousel({
   loop: true,
-  margin: 10,
-  dots: false,
+  // margin: 10,
+  dots: true,
   // nav: true,
-  autoplay: true,
+  autoplay: false,
   smartSpeed: 3000,
-  autoplayTimeout: 3000,
+  autoplayTimeout: 5000,
   responsive: {
     0: {
       items: 1,
