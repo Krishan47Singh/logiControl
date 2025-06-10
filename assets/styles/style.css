@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -691,124 +691,6 @@ section {
 
 /* end of industry-we-serve css */
 
-/* ------------ products css start ----------- */
-.products {
-  background: linear-gradient(rgba(255, 255, 255, 0.819), rgba(0, 0, 0, 0.858)),
-    url(../img/products/productbg2.jpg) no-repeat center center/cover;
-}
-
-.products .product {
-  position: relative;
-  overflow: hidden;
-}
-
-.products .product .product-img {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.products .product .product-img img {
-  width: 100%;
-  /* background: linear-gradient(rgba(229, 226, 226, 0.816), rgba(10, 10, 10, 0.741)); */
-  padding: 20px;
-  transition: 0.5s ease-in-out;
-}
-
-.products .product .product-img::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-image: linear-gradient(
-    rgba(0 0 0 / 0%),
-    rgba(0 0 0 / 0%),
-    rgba(0 0 0 / 50%),
-    rgba(0 0 0 / 90%)
-  );
-}
-
-.products .product .product-img:hover img {
-  transition: 0.5s ease-in-out;
-  transform: scale(1.2);
-}
-
-.products .product .product-text {
-  font-size: 30px;
-  z-index: 3;
-  position: absolute;
-  bottom: 10%;
-  left: 5%;
-  color: #fff;
-}
-
-.products .product:hover .product-text {
-  display: none;
-}
-
-.products .product .product-card-text {
-  padding: 10px;
-  color: #fff;
-  position: absolute;
-  background: var(--light-blue);
-  bottom: 20px;
-  left: -150%;
-  transition: 0.5s ease-in-out;
-}
-
-.products .product .product-card-text h3 {
-  color: #000;
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.products .product:hover .product-card-text {
-  position: absolute;
-  background: var(--light-blue);
-  z-index: 2;
-  left: 0%;
-  transition: 0.5s ease-in-out;
-}
-
-/* products responsive css */
-@media screen and (max-width: 1220px) {
-  .products .product .product-text {
-    font-size: 22px;
-  }
-
-  .products .product .product-text {
-    left: 12%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .products .product .product-text {
-    font-size: 18px;
-  }
-
-  .products .product .product-text {
-    left: 10%;
-  }
-
-  .products .product .product-card-text h3 {
-    color: #000;
-    font-weight: 600;
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-
-  .products .product .product-card-text p {
-    font-size: 12px;
-  }
-}
-
-/* end of products responsive */
-
-/* ------------ end of products css ------------ */
 
 /* --------------------- clients css start --------------------- */
 
@@ -931,21 +813,25 @@ section {
 /* ------ end of blog css ------ */
 
 /* ------------ FAQ's section css start --------------- */
-.accordion-button:focus {
+.faq .accordion .accordion-item .accordion-body p{
+  color: #5499e3;
+}
+
+.faq .accordion .accordion-item .accordion-header .accordion-button:focus {
   box-shadow: none;
 }
 
-.accordion-button {
-  color: rgb(84, 153, 227);
+.faq .accordion .accordion-item .accordion-header .accordion-button {
+  color: #000;
   transition: 0.5s ease-in-out;
 }
 
-.accordion-button:not(.collapsed) {
+.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   color: #fff;
   background-color: blue;
 }
 
-.accordion-button::after {
+.faq .accordion .accordion-item .accordion-header .accordion-button::after {
   flex-shrink: 0;
   width: 2.25rem;
   height: 2.25rem;
@@ -958,7 +844,7 @@ section {
   transition: transform 0.2s ease-in-out;
 }
 
-.accordion-button:not(.collapsed)::after {
+.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   content: "-";
   font-size: 2rem;
   /* Same size for consistency */
@@ -1220,300 +1106,9 @@ section {
 
 /* -----------  end of contatc us css ----------- */
 
-/* --------------- footer css start ----------- */
-.footer {
-  padding-top: 50px;
-  background: #000000;
-}
-
-.footer .footer-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.footer .footer-head .footer-logo img {
-  width: 200px;
-  height: 100%;
-  filter: drop-shadow(rgba(255, 255, 255, 0.35) 0px 5px 15px);
-}
-
-.footer .footer-head .social-icons ul {
-  display: flex;
-  gap: 20px;
-}
-
-.footer .footer-head .social-icons ul li a {
-  font-size: 20px;
-  color: var(--dark-blue);
-  background: #fff;
-  border-radius: 50%;
-  padding: 10px 14px;
-}
-
-.footer .footer-text h3 {
-  color: var(--yellow);
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-
-.footer .footer-text p {
-  text-align: justify;
-  color: #fff;
-}
-
-.footer .footer-text .part-1 {
-  border-top: 1px solid #ada0a0;
-  border-bottom: 1px solid #ada0a0;
-}
-
-.footer .footer-text .part-2 {
-  display: flex;
-  justify-content: center;
-  /* border: 1px solid #ada0a0; */
-}
-
-.footer .footer-text .part-2 ul li {
-  margin-bottom: 20px;
-}
-
-.footer .footer-text .part-2 ul li a {
-  color: #fff;
-  transition: 0.5s ease-in-out;
-}
-
-.footer .footer-text .part-2 ul li a:hover {
-  color: #ada0a0;
-  letter-spacing: 1.5px;
-}
-
-.footer .footer-text .part-3 {
-  border-top: 1px solid #ada0a0;
-  border-bottom: 1px solid #ada0a0;
-}
-
-.footer .footer-text .part-3 span {
-  color: var(--yellow);
-}
-
-.footer .footer-text .part-3 p {
-  color: #fff;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.footer .footer-text .part-3 a {
-  color: #fff;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.footer .footer-text .part-3 a:hover {
-  color: #ada0a0;
-}
-
-.footer .footer-text .part-1,
-.part-2,
-.part-3 {
-  padding: 20px 10px;
-}
-
-.footer-widget {
-  background-color: #1f1f1f;
-  padding: 10px 0px;
-}
-.footer-widget .copy-right-div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer-widget .copy-right-div .copyright p {
-  color: #fff;
-  margin-bottom: 0px;
-  font-size: 14px;
-}
-.footer-widget .copy-right-div .copyright p span {
-  color: var(--blue);
-}
-.footer-widget .copy-right-div .t-4-a p {
-  color: #fff;
-  margin-bottom: 0;
-  font-size: 14px;
-}
-.footer-widget .copy-right-div .t-4-a p a {
-  text-decoration: none;
-  color: #fff;
-}
-
-/* footer css responsive */
-@media screen and (max-width: 767px) {
-  .footer {
-    padding-top: 20px;
-  }
-  .footer .footer-head {
-    margin-bottom: 10px;
-  }
-
-  .footer .footer-head .footer-logo img {
-    width: 150px;
-  }
-
-  .footer .footer-head .social-icons ul {
-    gap: 10px;
-  }
-
-  .footer .footer-head .social-icons ul li a {
-    font-size: 16px;
-    padding: 8px 12px;
-  }
-
-  .footer .footer-text .part-2 {
-    justify-content: left;
-    border: none;
-  }
-  .footer-widget .copy-right-div {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .footer-widget .copy-right-div .copyright p {
-    text-align: center;
-    font-size: 14px;
-  }
-  .footer-widget .copy-right-div .t-4-a p {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .footer-head {
-    margin-bottom: 10px;
-  }
-
-  .footer .footer-head .footer-logo img {
-    width: 100px;
-  }
-
-  .footer .footer-head .social-icons ul {
-    gap: 10px;
-  }
-
-  .footer .footer-head .social-icons ul li a {
-    font-size: 14px;
-    padding: 7px 10px;
-  }
-
-  .footer .footer-text .part-2 {
-    justify-content: left;
-    border: none;
-  }
-  .footer-widget .copy-right-div .copyright p {
-    text-align: center;
-    font-size: 12px;
-  }
-  .footer-widget .copy-right-div .t-4-a p {
-    font-size: 12px;
-  }
-}
-
-/* end of footer responsive css */
-
-/* ---------- end of footer css ------------ */
 
 /* end of custom css */
 
-/* fixed icons css start */
-
-.fix-icons .whatsapp-icon {
-  position: fixed;
-  bottom: 10%;
-  left: 10px;
-  font-size: 20px;
-  padding: 10px 12px;
-  border-radius: 50px;
-  z-index: 10;
-}
-
-.fix-icons .phone-icon {
-  position: fixed;
-  bottom: 10%;
-  right: 10px;
-  font-size: 20px;
-  padding: 10px 10px;
-  border-radius: 50px;
-  z-index: 10;
-}
-
-.fix-icons a {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* animation for fixed icons */
-.fix-icons a {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: relative;
-  background-color: var(--dark-blue);
-}
-
-.fix-icons a::after {
-  animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    transform: scale(1.5);
-    opacity: 0.6;
-  }
-}
-
-.fix-icons a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--blue);
-  border-radius: 50%;
-  z-index: -1;
-}
-
-/* end of animation for fixed icons */
-
-@media screen and (max-width: 767px) {
-  .fix-icons .whatsapp-icon {
-    font-size: 18px;
-    padding: 8px 18px;
-  }
-
-  .fix-icons .phone-icon {
-    font-size: 18px;
-    padding: 8px 10px;
-  }
-  .fix-icons a {
-    width: 35px;
-    height: 35px;
-  }
-  @keyframes pulse {
-    0% {
-      opacity: 0;
-    }
-
-    50% {
-      transform: scale(1.4);
-      opacity: 0.6;
-    }
-  }
-}
-
-/* end of fixed icons css */
 
 /* --------------------------------------------------About US Page CSS---------------------------------------------- */
 
