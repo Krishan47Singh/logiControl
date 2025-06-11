@@ -27,6 +27,9 @@
   <link rel="stylesheet" href="assets/styles/style.css">
   <!-- aos cdn -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- swiper cdn -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -293,108 +296,199 @@
     <hr>
     <!-- end of we serve section -->
 
-    <section class="products">
-      <div class="container">
-        <div class="row">
-          <div class="section-head">
-            <h2 class="heading">Products</h2>
-          </div>
-          <div class="col-lg-12">
-            <div class="product-carousel owl-carousel owl-theme">
-              <!-- product-card-1 start -->
+    <!-- desktop-products section start -->
+    <section class="desktop-product">
+      <div class="wave">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="section-head">
+              <h2 class="heading">Products</h2>
+            </div>
+            <div class="col-lg-6">
               <a href="">
-                <div class="product-card">
-                  <div class="product-img">
-                    <img class="img-fluid" src="assets/img/products/product1.jpg" loading="lazy" alt="product-image">
+                <div class="desktop-product-card">
+                  <div class="desktop-product-img">
+                    <img class="img-fluid" src="assets/img/products/product1.jpg" alt="product-img" loading="lazy">
                   </div>
-                  <div class="product-card-text">
-                    <h3>Specialized Machines</h3>
-                    <p>At LogiControl, we design and build specialized machines tailored to meet the unique requirements
+                  <div class="desktop-product-text">
+                    <h3>Specialized Machine</h3>
+                    <p>
+                      At LogiControl, we design and build specialized machines tailored to meet the unique requirements
                       of modern automated manufacturing environments. Our custom-engineered solutions help industries
                       increase productivity, ensure consistent quality, and reduce human intervention in complex or
-                      repetitive processes.</p>
+                      repetitive processes.
+                    </p>
+                    <div class="desktop-product-btn">
+                      <button class="">Know More</button>
+                    </div>
                   </div>
                 </div>
               </a>
-
-              <!-- end of product-card-1 -->
-
-              <!-- product-card-2 start -->
-                <a href="">
-                <div class="product-card">
-                  <div class="product-img">
-                    <img class="img-fluid" src="assets/img/products/product1.jpg" loading="lazy" alt="product-image">
+            </div>
+            <div class="col-lg-6">
+              <a href="">
+                <div class="desktop-product-card">
+                  <div class="desktop-product-img">
+                    <img class="img-fluid" src="assets/img/products/product2.jpg" alt="product-img" loading="lazy">
                   </div>
-                  <div class="product-card-text">
+                  <div class="desktop-product-text">
                     <h3>Robotics</h3>
-                    <p>At LogiControl, we design and build specialized machines tailored to meet the unique requirements
+                    <p>
+                      At LogiControl, we design and build specialized machines tailored to meet the unique requirements
                       of modern automated manufacturing environments. Our custom-engineered solutions help industries
                       increase productivity, ensure consistent quality, and reduce human intervention in complex or
-                      repetitive processes.</p>
+                      repetitive processes.
+                    </p>
+                    <div class="desktop-product-btn">
+                      <button class="">Know More</button>
+                    </div>
                   </div>
                 </div>
               </a>
-              <!-- end of product-card-2 -->
-
-              <!-- product-card-3 start -->
-                <a href="">
-                <div class="product-card">
-                  <div class="product-img">
-                    <img class="img-fluid" src="assets/img/products/product1.jpg" loading="lazy" alt="product-image">
+            </div>
+            <div class="col-lg-6">
+              <a href="">
+                <div class="desktop-product-card">
+                  <div class="desktop-product-img">
+                    <img class="img-fluid" src="assets/img/products/product3.jpg" alt="product-img" loading="lazy">
                   </div>
-                  <div class="product-card-text">
+                  <div class="desktop-product-text">
                     <h3>Material Handeling Solutions</h3>
-                    <p>At LogiControl, we design and build specialized machines tailored to meet the unique requirements
+                    <p>
+                      At LogiControl, we design and build specialized machines tailored to meet the unique requirements
                       of modern automated manufacturing environments. Our custom-engineered solutions help industries
                       increase productivity, ensure consistent quality, and reduce human intervention in complex or
-                      repetitive processes.</p>
+                      repetitive processes.
+                    </p>
+                    <div class="desktop-product-btn">
+                      <button class="">Know More</button>
+                    </div>
                   </div>
                 </div>
               </a>
-              <!-- end of product-card-3 -->
-
-               <!-- product-card-4 start -->
-                <a href="">
-                <div class="product-card">
-                  <div class="product-img">
-                    <img class="img-fluid" src="assets/img/products/product1.jpg" loading="lazy" alt="product-image">
+            </div>
+            <div class="col-lg-6">
+              <a href="">
+                <div class="desktop-product-card">
+                  <div class="desktop-product-img">
+                    <img class="img-fluid" src="assets/img/products/product4.jpg" alt="product-img" loading="lazy">
                   </div>
-                  <div class="product-card-text">
-                    <h3>Controls and Automation Systems</h3>
-                    <p>At LogiControl, we design and build specialized machines tailored to meet the unique requirements
+                  <div class="desktop-product-text">
+                    <h3>Control and Automation Systems</h3>
+                    <p>
+                      At LogiControl, we design and build specialized machines tailored to meet the unique requirements
                       of modern automated manufacturing environments. Our custom-engineered solutions help industries
                       increase productivity, ensure consistent quality, and reduce human intervention in complex or
-                      repetitive processes.</p>
+                      repetitive processes.
+                    </p>
+                    <div class="desktop-product-btn">
+                      <button class="">Know More</button>
+                    </div>
                   </div>
                 </div>
               </a>
-              <!-- end of product-card-4 -->
-
-
-                <!-- product-card-5 start -->
-                <a href="">
-                <div class="product-card">
-                  <div class="product-img">
-                    <img class="img-fluid" src="assets/img/products/product1.jpg" loading="lazy" alt="product-image">
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+              <a href="">
+                <div class="desktop-product-card">
+                  <div class="desktop-product-img">
+                    <img class="img-fluid" src="assets/img/products/product5.jpg" alt="product-img" loading="lazy">
                   </div>
-                  <div class="product-card-text">
-                    <h3>Industry 4.0 systems</h3>
-                    <p>At LogiControl, we design and build specialized machines tailored to meet the unique requirements
+                  <div class="desktop-product-text">
+                    <h3>Industry 4.0 Systems</h3>
+                    <p>
+                      At LogiControl, we design and build specialized machines tailored to meet the unique requirements
                       of modern automated manufacturing environments. Our custom-engineered solutions help industries
                       increase productivity, ensure consistent quality, and reduce human intervention in complex or
-                      repetitive processes.</p>
+                      repetitive processes.
+                    </p>
+                    <div class="desktop-product-btn">
+                      <button class="">Know More</button>
+                    </div>
                   </div>
                 </div>
               </a>
-              <!-- end of product-card-5 -->
-
-
             </div>
           </div>
         </div>
       </div>
     </section>
-    <hr>
+    <!-- end of desktop-products section -->
+
+    <section class="mobile-product">
+      <div class="container">
+        <div class="row">
+          <div class="section-head">
+            <h2 class="heading">Products</h2>
+          </div>
+          <div class="col-sm-12">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <a class="swiper-slide" href="">
+                  <div class="mobile-product-card">
+                    <div class="mobile-product-img">
+                      <img class="img-fluid" src="assets/img/products/product1.jpg" alt="product-img" loading="lazy">
+                    </div>
+                    <div class="mobile-product-text">
+                      <h3>Specialized Machine</h3>
+                    </div>
+                  </div>
+                </a>
+                <a class="swiper-slide" href="">
+                  <div class="mobile-product-card">
+                    <div class="mobile-product-img">
+                      <img class="img-fluid" src="assets/img/products/product2.jpg" alt="product-img" loading="lazy">
+                    </div>
+                    <div class="mobile-product-text">
+                      <h3>Specialized Machine</h3>
+                    </div>
+                  </div>
+                </a>
+                <a class="swiper-slide" href="">
+                  <div class="mobile-product-card">
+                    <div class="mobile-product-img">
+                      <img class="img-fluid" src="assets/img/products/product3.jpg" alt="product-img" loading="lazy">
+                    </div>
+                    <div class="mobile-product-text">
+                      <h3>Specialized Machine</h3>
+                    </div>
+                  </div>
+                </a>
+                <a class="swiper-slide" href="">
+                  <div class="mobile-product-card">
+                    <div class="mobile-product-img">
+                      <img class="img-fluid" src="assets/img/products/product4.jpg" alt="product-img" loading="lazy">
+                    </div>
+                    <div class="mobile-product-text">
+                      <h3>Specialized Machine</h3>
+                    </div>
+                  </div>
+                </a>
+                <a class="swiper-slide" href="">
+                  <div class="mobile-product-card">
+                    <div class="mobile-product-img">
+                      <img class="img-fluid" src="assets/img/products/product5.jpg" alt="product-img" loading="lazy">
+                    </div>
+                    <div class="mobile-product-text">
+                      <h3>Specialized Machine</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- our-clients section start -->
     <section class="our-clients">
@@ -407,40 +501,40 @@
           <div class="client-carousel owl-carousel owl-theme">
 
             <div class="client">
-              <img class="img-fluid" src="assets/img/our-clients/client1.jpg" alt="client" loading="lazy">
+              <img class="img-fluid" src="assets/img/our-clients/bridgestone.jpg" alt="client" loading="lazy">
             </div>
             <div class="client">
-              <img class="img-fluid" src="assets/img/our-clients/client2.jpg" alt="client" loading="lazy">
+              <img class="img-fluid" src="assets/img/our-clients/grill.jpg" alt="client" loading="lazy">
             </div>
             <div class="client">
-              <img class="img-fluid" src="assets/img/our-clients/client3.jpg" alt="client" loading="lazy">
+              <img class="img-fluid" src="assets/img/our-clients/mk.jpg" alt="client" loading="lazy">
             </div>
             <div class="client">
-              <img class="img-fluid" src="assets/img/our-clients/client4.jpg" alt="client" loading="lazy">
+              <img class="img-fluid" src="assets/img/our-clients/jbmgroup.jpg" alt="client" loading="lazy">
             </div>
             <div class="client">
-              <img class="img-fluid" src="assets/img/our-clients/client5.jpg" alt="client" loading="lazy">
+              <img class="img-fluid" src="assets/img/our-clients/maneta.jpg" alt="client" loading="lazy">
             </div>
             <div class="client">
-              <img class="img-fluid" src="assets/img/our-clients/client6.jpg" alt="client" loading="lazy">
+              <img class="img-fluid" src="assets/img/our-clients/neelmetal.jpg" alt="client" loading="lazy">
             </div>
             <div class="client">
-              <img class="img-fluid" src="assets/img/our-clients/client7.jpg" alt="client" loading="lazy">
+              <img class="img-fluid" src="assets/img/our-clients/nichirin.jpg" alt="client" loading="lazy">
             </div>
             <div class="client">
-              <img class="img-fluid" src="assets/img/our-clients/client8.jpg" alt="client" loading="lazy">
+              <img class="img-fluid" src="assets/img/our-clients/regal.jpg" alt="client" loading="lazy">
             </div>
             <div class="client">
-              <img class="img-fluid" src="assets/img/our-clients/client9.jpg" alt="client" loading="lazy">
+              <img class="img-fluid" src="assets/img/our-clients/relaxo.jpg" alt="client" loading="lazy">
             </div>
             <div class="client">
-              <img class="img-fluid" src="assets/img/our-clients/client10.jpg" alt="client" loading="lazy">
+              <img class="img-fluid" src="assets/img/our-clients/rhimagnesita.jpg" alt="client" loading="lazy">
             </div>
             <div class="client">
-              <img class="img-fluid" src="assets/img/our-clients/client11.jpg" alt="client" loading="lazy">
+              <img class="img-fluid" src="assets/img/our-clients/talbros.jpg" alt="client" loading="lazy">
             </div>
             <div class="client">
-              <img class="img-fluid" src="assets/img/our-clients/client12.jpg" alt="client" loading="lazy">
+              <img class="img-fluid" src="assets/img/our-clients/yutaka.jpg" alt="client" loading="lazy">
             </div>
 
           </div>
@@ -526,7 +620,7 @@
         </div>
       </div>
     </section>
-    <hr>
+
     <!-- end of blog section -->
 
 
@@ -761,6 +855,32 @@
   <!-- end of main content -->
 
 
+  <!-- mobile-product swipper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+
+  <!-- end of monile product swipper -->
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <!--================== boostrap 5 cdb js ==================-->
@@ -771,6 +891,7 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/validation.js"></script>
   <script src="assets/js/custom.js"></script>
+  
   <!-- custom js end -->
 
   <!--================== light box cdn js ==================-->
