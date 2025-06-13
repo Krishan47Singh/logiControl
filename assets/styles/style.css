@@ -76,14 +76,14 @@ section {
   color: #fff;
   font-weight: 500;
   padding: 10px 20px;
- transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .web-btn a:hover {
- background: #fff;
- color: var(--black);
- border: 1px solid #000;
- transition: .5s ease-in-out;
+  background: #fff;
+  color: var(--black);
+  border: 1px solid #000;
+  transition: 0.5s ease-in-out;
 }
 
 /* button */
@@ -602,6 +602,7 @@ section {
 }
 
 .we-serve-industries .serve-left hr {
+  margin-top: 0px;
   margin-bottom: 20px;
   color: var(--darkest-blue);
   height: 1px;
@@ -919,7 +920,7 @@ section {
 
 /* --------------------- clients css start --------------------- */
 
-.our-clients .client-carousel .client {
+.our-clients .swiper .swiper-wrapper .swiper-slide .client {
   margin: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -1016,7 +1017,7 @@ section {
   opacity: 1;
 }
 
-.blogs .more-blogs{
+.blogs .more-blogs {
   display: flex;
   justify-content: end;
   margin-top: 20px;
@@ -1051,15 +1052,84 @@ section {
   .blogs .blog-card .blog-card-text .text-3 {
     font-size: 12px;
   }
-  .blogs .more-blogs{
-  justify-content: center;
-  margin-top: 0px;
-}
+  .blogs .more-blogs {
+    justify-content: center;
+    margin-top: 0px;
+  }
 }
 
 /* end of blog responsive css */
 
-/* ------ end of blog css ------ */
+/* -------------------------- end of blog css ----------------------------- */
+
+/* ------------ our videos css start ----------- */
+.our-videos .video-card .video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.714);
+  margin-bottom: 20px;
+}
+.our-videos .video-card .video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.our-videos .video-card .video-content {
+  padding: 0px 10px;
+}
+.our-videos .video-card .video-content p {
+  color: #252424c0;
+  margin-bottom: 0px;
+}
+.our-videos .video-card .video-content .content-top {
+  color: red;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.our-videos .video-card .video-content h3 {
+  font-size: 24px;
+}
+
+/* responsive css */
+@media screen and (max-width: 1120px) {
+   .our-videos .video-card .video-content h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 991px) {
+ .our-videos .right-side .video-card {
+    margin-top: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-videos .video-card .video-wrapper {
+    margin-bottom: 10px;
+  }
+  .our-videos .video-card .video-content .content-top {
+    font-size: 14px;
+  }
+  .our-videos .video-card .video-content h3 {
+    font-size: 16px;
+  }
+  .our-videos .video-card .video-content p {
+    font: 12px;
+    text-align: justify;
+  }
+ 
+}
+
+/* end of responsive */
+
+/* -------------- end of our videos css -------------- */
 
 /* ------------ FAQ's section css start --------------- */
 
@@ -1149,8 +1219,6 @@ section {
 
 /* --------------------- end of FAQ's section css ----------------------- */
 
-
-
 /* ------------------- contact us css start ------------------- */
 
 .contact-us .any-query {
@@ -1239,17 +1307,16 @@ section {
   background: var(--black);
   color: #fff;
   padding: 10px 20px;
-  border:  none;
+  border: none;
   text-align: center;
   font-weight: 500;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.form-btn button:hover{
+.form-btn button:hover {
   background: #fff;
   color: var(--black);
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-
 
 /* ------------------------- captcha css start ------------------- */
 
@@ -1522,10 +1589,10 @@ section {
 }
 
 /* responsive footer css start */
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
   .footer .part-1 .footer-about-text p {
     line-height: 1.8;
-    font-size: 18px; 
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1692,7 +1759,7 @@ section {
   font-size: 30px;
 }
 .project-method .project-method-card p {
- margin: 0px;
+  margin: 0px;
 }
 /* project method css end */
 
@@ -1778,8 +1845,6 @@ section {
   text-align: justify;
 }
 
-
-
 /* responsive css start */
 @media screen and (max-width: 991px) {
   .blog-detail .related-blog-img {
@@ -1813,7 +1878,6 @@ section {
 /* ------------------------------------ contact us page css ------------------------------------- */
 
 .contactus-main .map {
-  
   margin-bottom: 2px;
 }
 .contactus-main .map iframe {
@@ -1824,7 +1888,6 @@ section {
 
 /* responsive css */
 @media screen and (max-width: 767px) {
-
   .contactus-main .map iframe {
     width: 100%;
     height: 200px;
@@ -1835,9 +1898,14 @@ section {
 
 /* --------------------------------------- end of contact us page css ------------------------------------ */
 
-
-
-.top{ display: none; color: #c61f0c; font-size: 30px; position: fixed; bottom: 1rem; right: 1rem; }
-.top:hover{
+.top {
+  display: none;
+  color: #c61f0c;
+  font-size: 30px;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+.top:hover {
   color: var(--darkest-blue);
 }
