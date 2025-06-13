@@ -72,20 +72,18 @@ section {
 /* button */
 
 .web-btn a {
+  background: var(--black);
+  color: #fff;
   font-weight: 500;
   padding: 10px 20px;
-  text-align: center;
-  color: white;
-  background: var(--black);
-  display: inline;
-  transition: 0.3s ease-in-out;
+ transition: .5s ease-in-out;
 }
 
 .web-btn a:hover {
-  background: transparent;
-  color: var(--black);
-  border: 1px solid #000;
-  transition: 0.3s ease-in-out;
+ background: #fff;
+ color: var(--black);
+ border: 1px solid #000;
+ transition: .5s ease-in-out;
 }
 
 /* button */
@@ -159,23 +157,21 @@ section {
 .slide-navbar .close {
   display: flex;
   justify-content: end;
-  color: rgb(0, 0, 255);
+  color: red;
 }
 
 .slide-navbar .close h3 {
-  margin: 10px 10px 0px 0px;
-  font-size: 40px;
-  font-weight: 600;
+  margin: 32px 95px 0px 0px;
+  font-size: 20px;
+  font-weight: 800;
   cursor: pointer;
-  border: 1px solid #fff;
+  background: #fff;
   padding: 5px 10px;
   transition: 0.4s ease-in-out;
 }
 
 .slide-navbar .close h3:hover {
   transition: 0.4s ease-in-out;
-  color: #fff;
-  border: 1px solid rgb(0, 0, 255);
 }
 
 .slide-navbar .items .nav-items {
@@ -943,7 +939,6 @@ section {
 }
 
 .blogs .blog-card .blog-card-img img {
-  border-radius: 10px;
   width: 100%;
 }
 
@@ -1021,6 +1016,12 @@ section {
   opacity: 1;
 }
 
+.blogs .more-blogs{
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+
 /* blog responsive css */
 @media screen and (max-width: 991px) {
   .blogs .blog-card {
@@ -1050,6 +1051,10 @@ section {
   .blogs .blog-card .blog-card-text .text-3 {
     font-size: 12px;
   }
+  .blogs .more-blogs{
+  justify-content: center;
+  margin-top: 0px;
+}
 }
 
 /* end of blog responsive css */
@@ -1231,33 +1236,20 @@ section {
 }
 
 .form-btn button {
-  background-image: linear-gradient(
-    to right,
-    var(--dark-blue) 0%,
-    var(--blue) 51%,
-    var(--dark-blue) 100%
-  );
-}
-
-.form-btn button {
-  font-weight: 600;
-  padding: 10px 20px;
-  text-align: center;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  border: none;
-  outline: none;
-  /* box-shadow: 0 0 20px #eee; */
-  display: block;
-}
-
-.form-btn button:hover {
-  background-position: right center;
-  /* change the direction of the change here */
+  background: var(--black);
   color: #fff;
-  text-decoration: none;
+  padding: 10px 20px;
+  border:  none;
+  text-align: center;
+  font-weight: 500;
+  transition: .5s ease-in-out;
 }
+.form-btn button:hover{
+  background: #fff;
+  color: var(--black);
+  transition: .5s ease-in-out;
+}
+
 
 /* ------------------------- captcha css start ------------------- */
 
@@ -1623,7 +1615,7 @@ section {
   padding: 150px 0px;
   background: linear-gradient(
     to left,
-    rgba(48, 33, 255, 0.875),
+    rgba(31, 17, 228, 0.875),
     rgba(255, 255, 255, 0.147)
   );
 }
@@ -1671,7 +1663,7 @@ section {
 .aboutuspage-about-us .left-side-text h2 {
   font-size: 14px;
   color: var(--blue);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .aboutuspage-about-us .about-text {
@@ -1696,8 +1688,11 @@ section {
   font-weight: 600;
 }
 .project-method .project-method-card h4 {
-  color: var(--light-blue);
+  color: var(--darkest-blue);
   font-size: 30px;
+}
+.project-method .project-method-card p {
+ margin: 0px;
 }
 /* project method css end */
 
@@ -1783,31 +1778,7 @@ section {
   text-align: justify;
 }
 
-.blogs .blog-card .blogdetail-card-text .text-2 {
-  color: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.blogs .blog-card .blogdetail-card-text .text-1 p {
-  color: var(--blue);
-  font-size: 14px;
-}
-.blogs .blog-card .blogdetail-card-text span i {
-  color: var(--blue);
-}
-.blogs .blog-card .blogdetail-card-text .text-2 span i {
-  transition: 0.3s ease-in-out;
-}
-
-.blogs .blog-card:hover .blogdetail-card-text .text-2 span i {
-  color: var(--dark-blue);
-  transition: 0.3s ease-in-out;
-}
-hr {
-  margin: 0px;
-}
 
 /* responsive css start */
 @media screen and (max-width: 991px) {
@@ -1841,51 +1812,18 @@ hr {
 
 /* ------------------------------------ contact us page css ------------------------------------- */
 
-.contactus-page .any-query ul li a {
-  color: #122949;
-  font-size: 18px;
-  font-weight: 600;
-}
-.contactus-page .contact-form {
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.345),
-      rgba(0, 0, 0, 0.548)
-    ),
-    url(../img/contact/contactuspageformbg.avif) no-repeat repeat center
-      center/cover;
-  padding: 40px;
-  border-radius: 10px;
-}
-.contactus-page .contact-form form {
-  background-color: #00000074;
-  backdrop-filter: blur(8px);
-  padding: 10px;
-  border-radius: 10px;
-}
-.contactus-page .any-query h4 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #d4ad37;
-}
-
 .contactus-main .map {
-  border: 1px solid #000;
+  
   margin-bottom: 2px;
 }
 .contactus-main .map iframe {
+  border: 1px solid #000;
   width: 100%;
   height: 450px;
 }
 
 /* responsive css */
 @media screen and (max-width: 767px) {
-  .contact-us .contact-form {
-    padding: 10px;
-  }
-  .contactus-page .contact-form form {
-    padding: 10px;
-  }
 
   .contactus-main .map iframe {
     width: 100%;
