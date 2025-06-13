@@ -43,3 +43,25 @@ $(".client-carousel").owlCarousel({
 
 
 
+// topbar js ------------------------------------------------------
+
+
+$(function(){
+
+    $(".top").click(function(e){
+        e.preventDefault();
+        $("html,body").animate({scrollTop:0})
+    });
+
+    $(window).scroll(function(){
+        const top=$(this).scrollTop();
+        if(top>=600){
+            $(".top").fadeIn();
+        }
+        else{
+            $(".top").fadeOut();
+        }
+    
+    });
+
+});
