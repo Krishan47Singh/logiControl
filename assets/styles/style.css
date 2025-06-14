@@ -105,14 +105,10 @@ section {
   align-items: center;
 }
 
-/* .banner .banner-video {
-  min-height: 700px;
-  min-height: 94vh;
-} */
-
 .nav-banner {
   position: relative;
 }
+
 
 .nav-bar .navbar {
   position: absolute;
@@ -131,16 +127,27 @@ section {
     height: 50px;
   }
 }
+
+.fixedbg {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  background-color: #fff ;
+  z-index: 99999;
+  transition: background-color 0.3s ease;
+}
+/* ----------------------- slidebar css start here ---------------------- */
 .slide-navbar {
   position: fixed;
   top: 0;
   z-index: 99999;
   right: 0;
   height: 100vh;
-  background-color: #000;
+  backdrop-filter: blur(7px);
+  background: linear-gradient(to right, #000000de,#000000ca,rgba(19, 18, 18, 0.662)) !important;
   width: 30%;
   /* overflow: hidden; */
-  transform: translateX(650px);
+  transform: translateX(800px);
   transition: 0.4s ease-in-out;
 }
 .toggler-icon {
@@ -157,60 +164,42 @@ section {
 .slide-navbar .close {
   display: flex;
   justify-content: end;
-  color: red;
+ 
 }
 
 .slide-navbar .close h3 {
-  margin: 32px 95px 0px 0px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 800;
   cursor: pointer;
-  background: #fff;
-  padding: 5px 10px;
-  transition: 0.4s ease-in-out;
+  color: #fff; 
 }
 
-.slide-navbar .close h3:hover {
-  transition: 0.4s ease-in-out;
-}
 
 .slide-navbar .items .nav-items {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
 }
 
 .slide-navbar .items .nav-items .nav-item .nav-link {
   color: #fff;
-  font-size: 24px;
-  display: block;
-}
-
-.slide-navbar .items .nav-items .nav-item {
-  position: relative;
-}
-
-.slide-navbar .items .nav-items .nav-item::after {
-  content: "";
-  position: absolute;
-  border: 1px solid #fff;
-  width: 80%;
-  transition: 0.5s ease-in-out;
-  opacity: 1;
-}
-
-.slide-navbar .items .nav-items .nav-item:hover::after {
-  opacity: 0;
-  transition: 0.5s ease-in-out;
+  font-size: 18px;
+  font-weight: 200;
+  padding: 5px 0px; 
 }
 
 .slide-navbar .items .web-btn {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .slide-navbar .items .web-btn a {
   display: block;
+  text-align: center;
+  background: var(--dark-blue);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px 10px;
 }
 
 /* css for products dropdown */
@@ -280,52 +269,57 @@ section {
 /* end of css for products dropdown */
 
 /* reponsive slide-navbar */
+@media screen and (max-width: 991px) {
+  .slide-navbar {
+    width: 50%;
+    height: 100%;
+  }
+  .slide-navbar .close h3 {
+    margin: 20px 10px 0px 0px;
+    font-size: 32px;
+  }
+}
 @media screen and (max-width: 767px) {
   .slide-navbar {
-    width: 80%;
+    width: 60%;
     height: 100%;
   }
 
   .slide-navbar .close h3 {
-    margin: 20px 10px 0px 0px;
-    font-size: 20px;
-    padding: 5px 10px;
+    margin: 12px 10px 0px 0px;
   }
-  .slide-navbar .items .nav-items {
-    margin-top: 20px;
-    gap: 20px;
-  }
-  .slide-navbar .items .nav-items .nav-item .nav-link {
-    font-size: 20px;
-    padding: 5px 0px;
+}
+@media screen and (max-width: 410px) {
+  .slide-navbar .items .web-btn a {
+    font-size: 16px;
+    font-weight: 200;
+    padding: 2px 5px;
   }
 }
 
 @media screen and (max-height: 400px) {
   .slide-navbar .items .nav-items {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     gap: 20px;
   }
   .slide-navbar .items .nav-items .nav-item .nav-link {
-    color: #fff;
     font-size: 16px;
-    display: block;
-    padding: 2px 0px;
   }
-  .slide-navbar .items .nav-items .nav-item::after {
-    width: 100%;
-    transition: 0.5s ease-in-out;
+  .slide-navbar .items .web-btn a {
+    font-size: 16px;
   }
   .slide-navbar {
     top: 2%;
     right: 0;
-    height: 50%px;
+    height: 80%;
     width: 80%;
   }
 }
 /* end of reponsive slide-navbar */
+
+/* -------------------- end of slidebar css ------------------ */
 
 .banner .banner-video {
   position: relative;
@@ -351,7 +345,7 @@ section {
   justify-content: start;
   padding: 0px 0px 300px 50px;
   align-items: end;
-  background: linear-gradient(to left, #000000dc, #0000000c);
+  /* background: linear-gradient(to left, #000000dc, #0000000c); */
 }
 
 .banner .banner-video .overlay-vid h1 {
@@ -1100,12 +1094,12 @@ section {
 
 /* responsive css */
 @media screen and (max-width: 1120px) {
-   .our-videos .video-card .video-content h3 {
+  .our-videos .video-card .video-content h3 {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 991px) {
- .our-videos .right-side .video-card {
+  .our-videos .right-side .video-card {
     margin-top: 28px;
   }
 }
@@ -1124,7 +1118,6 @@ section {
     font: 12px;
     text-align: justify;
   }
- 
 }
 
 /* end of responsive */
